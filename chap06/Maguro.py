@@ -1,0 +1,10 @@
+class Nigiri:
+    category = "にぎり"
+    top = "ねた"
+    base = "しゃり"
+
+    def show_attributes(self):
+        print("top: {}, base: {}, category: {}".format(self.top, self.base, self.category))
+
+n1 = Nigiri()
+n1.show_attributes()
