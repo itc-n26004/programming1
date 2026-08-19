@@ -1,10 +1,9 @@
-def square(x):
-    if not isinstance(x, (int, float)):
-        if isinstance(x, str)and x.isdigit():
-            x = int(x)
-        else:
-            raise ValueError('square', x)
-    return x ** x
+def list_average(x):
+    try:
+        return sum(x)/len(x)
+    except:
+        print('list_length:', len(x))
+        return None
 
-print(square(2))
-print(square('a'))
+print(list_average([3.9, 4.5, 2,3]))
+print(list_average([]))

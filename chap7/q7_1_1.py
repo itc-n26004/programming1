@@ -1,16 +1,10 @@
-def list_del_nth(list_, index):
+name_age = {'tanaka': 35, 'satou': 25, 'suzuki': 27}
+
+def dict_info(dict_tbl, key):
     try:
-        del list_[index]
-    except IndexError:
-        print('Index Not Found')
+        return dict_tbl[key]
     except:
-        print('Unexcepted Error')
-    else:
-        print('Successfully')
+        return 'key is not found'
 
-my_list = ['a', 'b', 'c', 'd']
-list_del_nth(my_list, '5')
-list_del_nth(my_list, 5)
-list_del_nth(my_list, 0)
-
-print(my_list)
+print(dict_info(name_age, 'satou'))
+print(dict_info(name_age, 'yamada'))
